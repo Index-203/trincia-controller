@@ -2,7 +2,7 @@
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-#include <Arduino_FreeRTOS.h>
+
 
 //rf24
 RF24 radio(7, 8); //CE, CSN
