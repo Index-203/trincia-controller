@@ -18,7 +18,7 @@ int track_left_mode_value;
 bool mower_engage_value;
 bool safe_stop;
 int piston_height;
-int pisto_track_unlock;
+int piston_track_unlock;
 };
 
 
