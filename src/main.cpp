@@ -26,12 +26,12 @@ void setup() {
   //rf24 connection initialization
     radio.begin();
     radio.setChannel(125);
-    radio.openReadingPipe(0, address);
+    radio.openWritingPipe(0, address);
     radio.setPALevel(RF24_PA_MAX);
-    radio.startListening();
+    radio.stopListening();
 
   //struct initialize
-    struct Data_Pack initial_values{50, 0, LOW, 3, 3, LOW,LOW,0,0}; //pls remember Franz to insert correct value for servo control
+    struct Data_Pack initial_values{50, 0, LOW, 3, 3, LOW, LOW, 0, 0}; //pls remember Franz to insert correct value for servo control
 
 
 
