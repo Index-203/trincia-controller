@@ -26,7 +26,7 @@ void setup() {
   //rf24 connection initialization
     radio.begin();
     radio.setChannel(125);
-    radio.openWritingPipe(0, address);
+    radio.openWritingPipe(address);
     radio.setPALevel(RF24_PA_MAX);
     radio.stopListening();
 
